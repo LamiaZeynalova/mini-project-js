@@ -1,0 +1,140 @@
+{
+    "cards": [
+        {
+        "id": 1,
+        "category":"women",
+        "image":"https://preview.colorlib.com/theme/cozastore/images/product-05.jpg.webp",
+        "title": "Esprit Ruffle Shirt",
+        "info": "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.",
+        "price": 16.64,
+        "quantity":1
+       },
+       {
+        "id": 2,
+        "category":"women",
+        "image":"https://preview.colorlib.com/theme/cozastore/images/product-02.jpg.webp",
+        "title": "Herschel supply",
+        "info": "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.",
+        "price": 35.31,
+        "quantity":1
+       },
+       {
+        "id": 3,
+        "category":"men",
+        "image":"https://preview.colorlib.com/theme/cozastore/images/product-03.jpg.webp",
+        "title": "Only Check Trouser",
+        "info": "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.",
+        "price": 25.50,
+        "quantity":1
+       },
+       {
+        "id": 4,
+        "category":"women",
+        "image":"https://preview.colorlib.com/theme/cozastore/images/product-04.jpg.webp",
+        "title": "Classic Trench Coat",
+        "info": "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.",
+        "price": 75.75,
+        "quantity":1
+       },
+       {
+        "id": 5,
+        "category":"Watches",
+        "image":"https://preview.colorlib.com/theme/cozastore/images/product-15.jpg.webp",
+        "title": "Front Pocket Jumper",
+        "info": "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.",
+        "price": 34.75,
+        "quantity":1
+       },
+       {
+        "id": 6,
+        "category":"Watches",
+        "image":"https://preview.colorlib.com/theme/cozastore/images/product-06.jpg.webp",
+        "title": "Vintage Inspired Classic",
+        "info": "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.",
+        "price": 95.75,
+        "quantity":1
+       },
+       {
+        "id": 7,
+        "category":"women",
+        "image":"https://preview.colorlib.com/theme/cozastore/images/product-07.jpg.webp",
+        "title": "Shirt in Stretch Cotton",
+        "info": "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.",
+        "price": 52.26,
+        "quantity":1
+       },
+       {
+        "id": 8,
+        "category":"women",
+        "image":"https://preview.colorlib.com/theme/cozastore/images/product-08.jpg.webp",
+        "title": "Pieces Metallic Printed",
+        "info": "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.",
+        "price": 18.96,
+        "quantity":1
+       },
+       {
+        "id": 9,
+        "category":"shoes",
+        "image":"https://preview.colorlib.com/theme/cozastore/images/product-09.jpg.webp",
+        "title": "Pieces Metallic Printed",
+        "info": "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.",
+        "price": 18.96,
+        "quantity":1
+       },
+       {
+        "id": 10,
+        "category":"women",
+        "image":"https://preview.colorlib.com/theme/cozastore/images/product-10.jpg.webp",
+        "title": "Converse All Star Hi Plimsolls",
+        "info": "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.",
+        "price": 75.96,
+        "quantity":1
+       }  ,
+       {
+        "id": 11,
+        "category":"men",
+        "image":"https://preview.colorlib.com/theme/cozastore/images/product-11.jpg.webp",
+        "title": "Femme T-Shirt In Stripe",
+        "info": "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.",
+        "price": 75.96,
+        "quantity":1
+       },
+       {
+        "id": 12,
+        "category":"men",
+        "image":"https://preview.colorlib.com/theme/cozastore/images/product-12.jpg.webp",
+        "title": "Herschel supply",
+        "info": "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.",
+        "price": 63.96,
+        "quantity":1
+       } ,
+       
+       {
+        "id": 13,
+        "category":"men",
+        "image":"https://preview.colorlib.com/theme/cozastore/images/product-13.jpg.webp",
+        "title": "T-Shirt with Sleeve",
+        "info": "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.",
+        "price": 15.96,
+        "quantity":1
+       },
+       {
+        "id": 14,
+        "category":"women",
+        "image":"https://preview.colorlib.com/theme/cozastore/images/product-01.jpg.webp",
+        "title": "Femme T-Shirt In Stripe",
+        "info": "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.",
+        "price": 75.96,
+        "quantity":1
+       },
+       {
+        "id": 15,
+        "category":"women",
+        "image":"https://preview.colorlib.com/theme/cozastore/images/product-10.jpg.webp",
+        "title": "Converse All Star Hi Plimsolls",
+        "info": "Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.",
+        "price": 75.96,
+        "quantity":1
+       }
+    ]
+}
