@@ -1,4 +1,32 @@
 /////////////////////////////////slider//////////////////////////////////////////////
+const navbar = document.getElementById("navtop1")
+function navScroll() {
+    let next = window.pageYOffset
+    if (next >= 20) {
+        navbar.style.backgroundColor = "white"
+    }
+    else {
+        navbar.style.backgroundColor = "transparent"
+    
+
+    }
+}
+window.addEventListener("scroll", navScroll)
+
+document.addEventListener('DOMContentLoaded', function() {
+  var burgerMenu = document.querySelector('.slicknav-menui');
+  
+  var navMenu = document.querySelector('.slicknav-menu');
+  burgerMenu.addEventListener('click', function() {
+    
+    if (navMenu.style.display === 'block') {
+      navMenu.style.display = 'none';
+    } else {
+      navMenu.style.display = 'block';
+    }
+  });
+});
+
 
 document.addEventListener('DOMContentLoaded', function() {
     AOS.init();

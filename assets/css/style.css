@@ -27,12 +27,13 @@ ul{
   padding: 25px 100px;
   position: fixed;
   z-index: 99999;
-  /* background-color: transparent; */
+  background-color: transparent;
   width: 100%;
   height: 84px;
   top: 0px;
   left: 0px;
 }
+
 .sub-menu{
     opacity: 0;
     border: 1px solid black;
@@ -67,6 +68,21 @@ ul{
     align-items: center;
     gap: 20px;
 }
+.label1{
+    width: 30px;
+    height: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 62, 111);
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    position: absolute;
+    top: 16px;
+    left: 586px;
+}
 .logo {
     display: flex;
     gap: 80px;
@@ -80,19 +96,19 @@ header .nav-menu {
 }
 
 #cart-sidebar {
-  width: 0; /* Başlangıçta yan menü gizli olacak */
-  position: fixed; /* Yan menü sabit bir pozisyonda olacak */
-  top: 0; /* Üstten boşluk bırakmıyoruz */
-  right: 0; /* Sağ taraftan açılacak */
-  height: 100%; /* Tam ekran yüksekliğinde */
-  background-color: #fff; /* Arka plan beyaz */
-  overflow-x: hidden; /* Yatay kaydırmayı kapat */
-  transition: 0.5s; /* Açılıp kapanma animasyonu için */
-  /* İçeriğin diğer stilleri... */
+  width: 0; 
+  position: fixed; 
+  top: 0; 
+  right: 0; 
+  height: 100%; 
+  background-color: #fff; 
+  overflow-x: hidden;
+  transition: 0.5s; 
+  
 }
 
 #cart-sidebar.active {
-  width: 250px; /* Aktif olduğunda yan menünün genişliği */
+  width: 250px; 
 }
 
 
@@ -120,26 +136,26 @@ header nav .cart-box span , .wishlist span {
   top: -10px;
   left: 20px;
 }
-/* Sepet yan menü stilini düzenle */
+
 #dropdown-cart {
-  width: 350px; /* Genişlik */
-  height: auto; /* Yükseklik otomatik ayarlanacak */
-  padding: 20px; /* İç boşluk */
-  position: fixed; /* Sabit pozisyon */
-  top: 0; /* Üstten başlayarak */
-  right: -350px; /* Başlangıçta gizli, sağdan -350px */
-  background-color: #fff; /* Arka plan rengi beyaz */
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Gölge efekti */
-  transition: right 0.3s; /* Sağa doğru açılma/kapanma animasyonu */
-  z-index: 1001; /* Diğer öğelerin üzerinde */
+  width: 350px; 
+  height: auto; 
+  /* padding: 20px;  */
+  position: fixed; 
+  top: 0; 
+  right: -350px; 
+  background-color: #fff; 
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); 
+  transition: right 0.3s; 
+  z-index: 1001; 
 }
 
-/* Sepet yan menü aktif olduğunda stilleri */
+
 #dropdown-cart.active {
-  right: 0; /* Aktif olduğunda sağdan 0px */
+  right: 0; 
 }
 
-/* Sepet içindeki ürün listesi stilini düzenle */
+
 #dropdown-cart #cart-items .cartProduct {
   display: flex;
   align-items: center;
@@ -154,16 +170,16 @@ header nav .cart-box span , .wishlist span {
   margin-right: 10px; 
 }
 
-/* Ürün başlığı ve fiyat stilini düzenle */
+
 #dropdown-cart #cart-items .cartProduct > div {
   flex: 1;
   margin-right: 10px;
 }
 
-/* Toplam fiyat stilini düzenle */
+
 #dropdown-cart .cart-total {
-  font-weight: bold; /* Yazı tipi kalın */
-  margin-top: 15px; /* Üstten boşluk */
+  font-weight: bold; 
+  margin-top: 15px; 
 }
 
 
@@ -182,17 +198,117 @@ header nav .cart-box span , .wishlist span {
   margin-top: 10px; 
 }
 
+.slicknav-menu{
+  display: none;
+  background-color:#685bf2;
+  width:100%;
+  color: white; 
+}
+.slicknav-menu li{
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.slicknav-menu li a{
+color: white;
+font-size: 18px;
+}
+.slicknav-menui {
+  font-size: 22px;
+  width: 22px;
+  color: #666666;
+  background-color: transparent;
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-menu {
+    display: none;
+  }
+  .nav-end .slicknav-menui {
+    display: block;
+  }
+  .logo ul{
+    display: none;
+  }
+}
 
 @media (max-width: 768px) {
   #dropdown-cart {
     width: 100%; 
     right: -100%; 
+
+  }
+  .nav-menu{
+    display: none;
+  }
+  .nav-end {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .logo ul{
+    display: none;
+  }
+  .label1 , .sub-menu , .nav-menu{
+    display: none;
   }
   
   #dropdown-cart.active {
     right: 0; 
   }
-}
+ 
+  header {
+    height: auto; 
+    padding: 15px 10px;
+  }
+
+  .nav-menu {
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    right: 0;
+    background-color: #fff; 
+    z-index: 1000;
+    border-top: 1px solid #ccc; 
+  }
+  .slicnav-menui{
+    display:none
+  }
+
+  .nav-end {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+    .slicknav-menu {
+      display: none;
+    }
+    .slicknav-menu.responsive {
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 100%;
+      left: 0;
+      background-color: #7269f8; 
+      color: #0b0b0b;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .slicknav-menu.responsive li {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+
+
+  .nav-menu li {
+    border-bottom: 1px solid #ccc; 
+  }
+
 
 header nav #dropdown-cart .cartImage {
   width: 80px;
@@ -229,14 +345,6 @@ header nav #dropdown-cart #cart-total {
 
 
 
-@media screen and (max-width: 992px) {
-  .nav-menu .sub-menu {
-    display: none;
-  }
-  .nav-end .slicknav-menu {
-    display: block;
-  }
-}
 
  /* slider */
 .slider-container {
