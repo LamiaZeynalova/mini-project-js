@@ -140,11 +140,25 @@ document.addEventListener("DOMContentLoaded", function() {
   const cartIcon = document.querySelector('.cart-box'); 
 
   cartIcon.addEventListener('click', function() {
-      ////slider acbagla////
+      ////acbagla////
       const cartSidebar = document.getElementById('dropdown-cart'); 
       cartSidebar.classList.toggle('active'); 
   });
-  
+  const dropdownCart = document.getElementById("dropdown-cart");
+    const closeCartButton = document.getElementById("close-cart");
+
+   
+    cartIcon.addEventListener("click", function() {
+       
+        dropdownCart.style.display = "block";
+    });
+
+    
+    closeCartButton.addEventListener("click", function() {
+     
+        dropdownCart.style.display = "none";
+    });
+
   
   updateCartCount();
   DisplayCart();

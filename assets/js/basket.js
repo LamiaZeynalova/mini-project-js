@@ -13,8 +13,9 @@ const deleteAll=document.getElementById("delete-all")
             updateCartCount()
         })
 updateCartCount();  ////count refresde yenilenmir oldugu kimi qalir////
-// DisplayCart();
+DisplayCart();
 });
+
 
 // basket countunu guncellemek ve gostermek////
 function updateCartCount() {
@@ -32,7 +33,7 @@ function DisplayCart() {
         productElement.innerHTML = `<div class="cartProduct" data-id=${product.id}>
             <img class="cart-img" src=${product.image} alt="Product Image">
             ${product.title} - Quantity: ${product.quantity} - Price: ${(product.quantity * product.price).toFixed(2)}
-            <button class="delete-product" data-id="${product.id}">Remove</button></div>`;
+            <button class="delete-product" data-id="${product.id}"><i class="fa-solid fa-trash-can"></i></button></div>`;
         cartItems.appendChild(productElement);
     });
     const totalPrice = cart.reduce((total, item) => total + item.price * item.quantity, 0);
@@ -61,6 +62,20 @@ document.getElementById("delete-all").addEventListener("click", function() {
     updateCartCount();
     DisplayCart();
 });
+function addBasket(addToCardButton) {
+    addToCardButton[0].addEventListener("click",(e)=>{
+        e.preventDefault()
+        const parentElement = e.target.parentNode;
+        const product={
+            id:parentElement.dataset.id,
+            image:parentElement.querySelector("h1").innerText,
+            name:parentElement.querySelector("h2").innerText,
+            price:parentElement.querySelector("p").innerText.replace("$",""),
+            quantity:parentElement.querySelector("span").innerText
+        }
+        addToBasket(product)
+    })
+}
 
 ///baskete mehsul elave etmek ucun /////
 function addToCart(product) {

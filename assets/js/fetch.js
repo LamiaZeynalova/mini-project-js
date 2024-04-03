@@ -125,7 +125,10 @@ function sortAndFilterCards() {
     displayCards();
 }
 
-// Kartları DOM'a add etmek///
+
+
+
+// Kartları  add etmek///
 function displayCards() {
     const toDisplay = currentCards.slice(startIndex, startIndex + itemsPerPage);
     if (startIndex === 0) cardContainer.innerHTML = '';
@@ -154,9 +157,11 @@ function CardStyle(item) {
             <a href="">${item.title}<a>
              <p class="card-price">$${item.price}<p>
            </div>
-          <span class="wishlist-btn"><i class="fa-regular fa-heart"></i><span>
+          <span class="wishlist-btn"><i class="fa-regular fa-heart wishlist-btn"></i><span>
       </div>
   `;
+
+  
 
   //quik buttonuna event/////
   const modalBtn = card.querySelector('.modal-btn');
@@ -171,7 +176,30 @@ function CardStyle(item) {
       this.firstChild.classList.toggle('fa-solid'); // Rengi değiştirmek için sınıfı değiştir
       this.firstChild.classList.toggle('fa-regular');
   });
+  const addtoWishListButtons = document.querySelectorAll(".add-to-wishlist");
 
+    addtoWishListButtons.forEach((button, index) => {
+      button.addEventListener("click", (e) => {
+        const card = e.target.closest(".card");
+        const backgroundStyle =
+          card.querySelector(".card-image").style.backgroundImage;
+        const imageUrl = backgroundStyle.replace('url("', "").replace('")', "");
+
+        const product = {
+          id: card.dataset.id,
+          image: imageUrl,
+          title: card.querySelector(".card-title").innerText,
+          price: parseFloat(
+            card.querySelector(".card-price").innerText.replace("$", "")
+          ),
+        };
+        addToWishlist(product);
+      });
+    });
+
+   
+  
+  
   return card;
 }
 // Modal açmaq//////
